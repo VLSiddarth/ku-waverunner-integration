@@ -42,7 +42,7 @@ cp .env.example .env
 
 `.env` contents:
 ```
-KU_API_KEY=ku_test_a4e7feb746cbde4841dae7897d429777094ecbf5af93d387
+KU_API_KEY=your_injected_sandbox_key_here
 KU_BASE_URL=https://vlsiddarth-knowledge-universe.hf.space
 GEMINI_API_KEY=your_key_here
 DECAY_THRESHOLD=0.40
