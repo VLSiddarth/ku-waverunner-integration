@@ -1,15 +1,12 @@
 ---
 name: ku-temporal-decay
-description: Validates retrieved documents for temporal freshness before 
-they enter agent context. Use when agent retrieves documents from any 
-source and needs to prevent stale context from reaching the LLM.
+description: "Validates retrieved documents for temporal freshness before they enter agent context. Use when agent retrieves documents from any source and needs to prevent stale context from reaching the LLM."
 ---
 
 # Knowledge Universe Temporal Decay Skill
 
 ## When to activate this skill
-Activate whenever the agent retrieves documents from a vector database, 
-search API, or any external source before passing context to the LLM.
+Activate whenever the agent retrieves documents from a vector database, search API, or any external source before passing context to the LLM.
 
 ## Instructions
 
@@ -22,7 +19,7 @@ search API, or any external source before passing context to the LLM.
 
 ## Output signals
 - decay_score: 0.0 (fresh) to 1.0 (fully stale)
-- knowledge_velocity: frozen / slow / moderate / fast / hypersonic  
+- knowledge_velocity: frozen / slow / moderate / fast / hypersonic
 - max_decay_detected: highest decay score in the retrieved set
 - conflict_pairs: contradicting sources detected
 
